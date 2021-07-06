@@ -72,3 +72,12 @@ git fsck --unreachable \ git fsck --lost-found // 查看删除的stash\commit记
 git show id // 查看删除stash记录的具体信息
 git merge id // 合并删除的stash
 ```
+
+### 本地切换远程新建的分支
+- 远程创建分支后
+```
+git fetch
+git branch -a // 查看一下所有的分支
+git checkout origin/branchName
+git switch -c origin/branchName
+```
