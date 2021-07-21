@@ -81,3 +81,17 @@ git branch -a // 查看一下所有的分支
 git checkout origin/branchName
 git switch -c origin/branchName
 ```
+
+### git commit失败
+
+#### 报错信息 - pre-commit hook failed (add --no-verify to bypass)
+```
+$ git commit -m "message"
+  > running pre-commit hook: lint-staged
+ pre-commit hook failed (add --no-verify to bypass)
+```
+- 错误原因
+  - 项目中有*error*，导致*eslint*检测未通过，提交失败。
+- 解决方案
+  - 在配置文件中，不需要使用eslint时，把lintOnSave设为false即可
+  - 在项目中执行 *npm run lint*找到问题，并修改，之后再提交即可
