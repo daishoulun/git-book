@@ -81,6 +81,10 @@ git branch -a // 查看一下所有的分支
 git checkout origin/branchName
 git switch -c origin/branchName
 ```
+### 本地切换远程分支并在本地创建新分支
+```
+git checkout -b branchName origin/branchName
+```
 
 ### git commit失败
 
