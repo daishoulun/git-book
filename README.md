@@ -99,3 +99,10 @@ $ git commit -m "message"
 - 解决方案
   - 在配置文件中，不需要使用eslint时，把lintOnSave设为false即可
   - 在项目中执行 *npm run lint*找到问题，并修改，之后再提交即可
+
+### you have not concluded your merge
+```
+git fetch -all
+git reset --hard origin/feature/daishoulun/master_addModule_zl_dsl_20220303
+```
+- 此方法会放弃本地所有修改
