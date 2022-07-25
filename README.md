@@ -106,3 +106,11 @@ git fetch -all
 git reset --hard origin/feature/daishoulun/master_addModule_zl_dsl_20220303
 ```
 - 此方法会放弃本地所有修改
+
+### git 版本回退并同步到远端
+```
+$ git log // 查看提交的版本记录
+$ git reset --hard HEAD^ // 回退到上一个版本
+$ git reset --hard ***(commit id) // 回退到指定版本
+$ git push -f origin branchName // 同步到远端
+```
