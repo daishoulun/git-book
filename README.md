@@ -114,3 +114,9 @@ $ git reset --hard HEAD^ // 回退到上一个版本
 $ git reset --hard ***(commit id) // 回退到指定版本
 $ git push -f origin branchName // 同步到远端
 ```
+### npm install 依赖冲突报错
+#### 报错信息 peer xxx@x.x.x from yyy@y.y.y
+
+- 解决方案
+  - npm i --legacy-peer-deps
+  - npm install
