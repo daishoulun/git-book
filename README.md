@@ -120,3 +120,8 @@ $ git push -f origin branchName // 同步到远端
 - 解决方案
   - npm i --legacy-peer-deps
   - npm install
+
+### 撤销上次提交（未push到远端的代码）
+```
+git reset --soft HEAD^
+```
