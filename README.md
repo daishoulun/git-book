@@ -125,3 +125,12 @@ $ git push -f origin branchName // 同步到远端
 ```
 git reset --soft HEAD^
 ```
+
+### 修改上次提交的message
+```
+输入命令
+git commit --amend
+修改信息后，按esc键输入:wq推出修改
+强制推送
+git push origin branchName -f
+```
