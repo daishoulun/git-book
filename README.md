@@ -134,3 +134,9 @@ git commit --amend
 强制推送
 git push origin branchName -f
 ```
+
+### 远程仓库存在，本地新建项目后提交到远程仓库提交不上去
+```
+git pull https://github.com/xxx.git branchName --allow-unrelated-historie
+git push --set-upstream dsl-blog main 
+```
